@@ -30,6 +30,22 @@ public class HttpUserStorageProviderFactory implements UserStorageProviderFactor
                 .name(HttpStorageConstants.ID_ATTRIBUTE)
                 .label("id attribute")
                 .add()
+                .property().type(ProviderConfigProperty.LIST_TYPE)
+                .name(HttpStorageConstants.METHOD_VALIDATE_CREDENTIALS)
+                .label("method validate credentials")
+                .options(List.of("GET", "POST", "DELETE","UPDATE"))
+                .helpText("http method to use to validate users credentials")
+                .add()
+                .property().type(ProviderConfigProperty.STRING_TYPE)
+                .name(HttpStorageConstants.PATH_VALIDATE_CREDENTIALS)
+                .label("path validate credentials")
+                .helpText("http endpoint to use to validate users credentials")
+                .add()
+                .property().type(ProviderConfigProperty.MULTIVALUED_STRING_TYPE)
+                .name(HttpStorageConstants.HEADERS_VALIDATE_CREDENTIALS)
+                .label("header validate credentials")
+                .helpText("http headers to add to request to validate users credentials")
+                .add()
                 .build();
     }
 

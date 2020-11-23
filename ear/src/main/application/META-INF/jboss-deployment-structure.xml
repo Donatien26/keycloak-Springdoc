@@ -1,0 +1,12 @@
+<jboss-deployment-structure>
+    <deployment>
+        <module-alias name="deployment.http-provider"/>
+    </deployment>
+    <sub-deployment name="fr.insee.keycloak-keycloak-http-storage-provider-core-0.0.1-SNAPSHOT.jar">
+        <dependencies>
+            <module name="org.keycloak.keycloak-core"/>
+            <module name="org.keycloak.keycloak-server-spi"/>
+            <module name="org.keycloak.keycloak-server-spi-private"/>
+            <module name="org.keycloak.keycloak-services"/>
+        </dependencies>
+</jboss-deployment-structure>

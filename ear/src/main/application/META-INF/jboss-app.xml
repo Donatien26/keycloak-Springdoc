@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/application_7.xsd" version="7">
+  <display-name>keycloak-http-storage-provider-ear</display-name>
+  <module>
+    <java>fr.insee.keycloak-keycloak-http-storage-provider-core-0.0.1-SNAPSHOT.jar</java>
+  </module>
+  <module>
+    <java>lib/jars/org.apache.commons-commons-text-1.9.jar</java>
+  </module>
+  <module>
+    <java>lib/jars/org.apache.commons-commons-lang3-3.11.jar</java>
+  </module>
+</application>
